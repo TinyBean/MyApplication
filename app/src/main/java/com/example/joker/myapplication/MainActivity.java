@@ -51,14 +51,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDrawerOpened(View view) {
                 super.onDrawerOpened(view);
-                //getActionBar().setTitle("MyApplication");
                 invalidateOptionsMenu();
             }
 
             @Override
             public void onDrawerClosed(View view) {
                 super.onDrawerClosed(view);
-                //getActionBar().setTitle("Myapplication");
                 invalidateOptionsMenu();
             }
         };
@@ -104,43 +102,6 @@ public class MainActivity extends AppCompatActivity {
         // Sync the toggle state after onRestoreInstanceState has occurred.
         drawerToggle.syncState();
     }
-
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Pass the event to ActionBarDrawerToggle, if it returns
-//        // true, then it has handled the app icon touch event
-//        if (drawerToggle.onOptionsItemSelected(item)) {
-//            return true;
-//        }
-//        // Handle your other action bar items...
-//
-//        return super.onOptionsItemSelected(item);
-//    }
-
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // The action bar home/up action should open or close the drawer.
-//        // ActionBarDrawerToggle will take care of this.
-//        if (drawerToggle.onOptionsItemSelected(item)) {
-//            return true;
-//        }
-//        // Handle action buttons
-//        switch(item.getItemId()) {
-//            case R.id.action_websearch:
-//                // create intent to perform web search for this planet
-//                Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
-//                intent.putExtra(SearchManager.QUERY, getSupportActionBar().getTitle());
-//                // catch event that there's no activity to handle intent
-//                if (intent.resolveActivity(getPackageManager()) != null) {
-//                    startActivity(intent);
-//                } else {
-//                    Toast.makeText(this, R.string.app_not_available, Toast.LENGTH_LONG).show();
-//                }
-//                return true;
-//            default:
-//                return super.onOptionsItemSelected(item);
-//        }
-//    }
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
