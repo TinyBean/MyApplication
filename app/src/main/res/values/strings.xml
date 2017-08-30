@@ -16,8 +16,13 @@
         <item>Uranus</item>
         <item>Neptune</item>
     </string-array>
+    <string-array name="import_array">
+        <item>Import from camera</item>
+        <item>Import from local</item>
+    </string-array>
 
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_image">ImageActivity</string>
 </resources>

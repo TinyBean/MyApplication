@@ -3,9 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <item
-        android:id="@+id/action_websearch"
-        android:icon="@drawable/action_search"
-        android:title="@string/action_websearch"
-        app:showAsAction="ifRoom|withText"/>
+    <!--<item-->
+        <!--android:id="@+id/import_image"-->
+        <!--android:icon="@drawable/action_search"-->
+        <!--android:title="import_image"-->
+        <!--app:showAsAction="never"/>-->
+    <group>
+        <item
+            android:id="@+id/camera_image"
+            android:title="(X)image from camera"/>
+        <item
+            android:id="@+id/local_image"
+            android:title="image from local"/>
+    </group>
 </menu>
